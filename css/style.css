@@ -394,7 +394,9 @@ template {
 
 .header-text__city {
   display: block;
-  font-style: 13px;
+  font-family: 'Museo Sans Cyrl 300', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
   margin-bottom: 9px;
 }
 
@@ -409,6 +411,7 @@ template {
 
 .button {
   padding: 17px 30px;
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
   font-size: 13px;
   font-weight: bold;
   border: none;
