@@ -520,7 +520,7 @@ template {
 
 .feedback {
   padding: 94px 0;
-  background: url("../img/blur.jpg") no-repeat center right;
+  background: url("../img/blur.jpg") no-repeat center right -40%;
 }
 
 .form {
@@ -551,6 +551,8 @@ template {
 }
 
 .form__button {
+  font-size: 16px;
+  line-height: 18px;
   padding: 28px;
   display: block;
   width: 100%;
@@ -576,18 +578,35 @@ template {
   -webkit-box-flex: 50%;
       -ms-flex: 50%;
           flex: 50%;
+  max-width: 251px;
+}
+
+.underform {
+  float: right;
 }
 
 .phone {
-  min-width: 40px;
+  width: 40px;
   height: 40px;
   border-radius: 50%;
   border: 2px solid #cccccc;
+  margin-right: 10px;
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/phone.png");
+  float: left;
+}
+
+.underform__text {
+  font-family: 'Museo Sans Cyrl 300', sans-serif;
+  font-size: 15px;
 }
 
 .underform__tel {
   font-family: 'Museo Sans Cyrl 700', sans-serif;
   font-size: 15px;
+  margin-top: 4px;
 }
 
 *, *:after, *:before {
