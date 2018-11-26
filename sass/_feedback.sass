@@ -1,9 +1,19 @@
 .feedback
   padding: 94px 0
-  background: url('../img/blur.jpg') no-repeat center right -40%
+  background: url('../img/blur.jpg') no-repeat center left 700px
+  background-size: contain
+  position: relative
+  z-index: 1
+  &:before
+    content: ''
+    left: 0
+    top: 0
+    width: 60%
+    background-color: #ffffff
+    position: absolute
+    z-index: -1
       
-      
-    
+     
 .form
   max-width: 575px
  
