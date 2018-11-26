@@ -730,6 +730,9 @@ img {
   .form__input {
     width: 100%;
   }
+  .form__button {
+    width: 100%;
+  }
   .under-form {
     display: none;
   }
