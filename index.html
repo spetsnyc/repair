@@ -24,7 +24,7 @@
         <a  class="header-text__phone" href="tel:4954225131">+7 (495) 42-251-31 </a> 
      </div>
      <div class="header-text__button">
-         <button class="button"> Перезвоните <span class="hidden-xs">мне</span></button>
+         <button class="button" id="button-callback" > Перезвоните <span class="hidden-xs">мне</span></button>
      </div>
      <div class="button_media"></div>
 
@@ -119,17 +119,92 @@
                  </div>
               </div>
             </div>
-
-             
+            
     </div>
-    
 
+</div>
+</section>
+
+<div class="modal" id="modal-callback" >
+    <div class="modal_dialog">
+     <div class="modal_close">&#10006;</div>
+     <div class="modal-wrap">
+        <div class="modal-left">
+            <div class="pic"><img src="./img/bathroom.png" alt="bathroom">
+            <div class="paragraph"> <p>Ванная комната</p>
+                <hr>
+            135*150 - <b>31 000 руб.</b><br>
+               170*170 - <b>43 000 руб.</b></div>
+            </div> 
+               
+               <div class="pic"><img src="./img/white-bath.png" alt="bathroom"> 
+                <div class="paragraph"><p>Туалет</p>
+                 <hr>   
+               135*70 - <b>14 000 руб.</b></div>
+             </div>  
+               
+               <div class="pic"><img src="./img/blue.png" alt="bathroom">
+               <div class="paragraph"><p>Совмещенный санузел</p>
+                <hr>
+                170*210 - <b>54 000 руб.</b>
+               </div>
+             </div> 
+
+
+            <ul class="cost">В стоимость работ входит
+
+                <li>Демонтаж старого покрытия стен и пола</li>
+                <li>Выравнивание стен гипсовыми составами</li>
+                <li>Грунтовка стен и пола антисептиком, бетоноконтактом</li>
+                <li>Монтаж кафельной плитки на полу и стенах</li>
+                <li>Установка реечного или натяжного потолка, светильников</li>
+                <li>Монтаж двери с коробкой</li>
+
+                </ul>
+   
+
+        </div>
+        <!-- /.modal-left -->
+        <div class="modal-right">
+        <h2 class="title-right">Узнайте точную стоимость
+            ремонта по телефону!</h2>
+         </div>
+         <div class="subtitle-right">Заполните поля ниже - мы свяжемся с Вами</div>
+        
+         <form action="#">
+            <input type="text" class="bottom-text" placeholder="Ваше имя" >
+            <input type="tel" class="bottom-phone" placeholder="Ваш телефон" >
+            <button type="submit" class="button form__button" >Получить бесплатный дизайн-проект
+                        </button>
+
+        </form>  
+
+
+      </div>
+
+    </div>
 
 </div>
 
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+$(document).ready(function () {
+    $('#button-callback').on('click', function() {
+        $('#modal-callback').toggleClass('modal_visible');
+           
+    });
+
+     $('.modal_close').on('click', function() {
+        $('#modal-callback').toggleClass('modal_visible');
+           
+    });
 
 
-</section>
+   
+});
+
+</script>
+
 
 </body>
 </html>

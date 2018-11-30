@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -736,5 +737,131 @@ img {
   .under-form {
     display: none;
   }
+}
+
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.52);
+  left: 0;
+  top: 0;
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: none;
+}
+
+.modal_visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal_dialog {
+  width: 1200px;
+  height: 674px;
+  background-color: white;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.modal_close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.modal_close:hover {
+  cursor: pointer;
+}
+
+.modal-wrap {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+hr {
+  width: 42px;
+  height: 2px;
+  background-color: #ffd200;
+}
+
+.modal-left {
+  overflow: hidden;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  background-color: #f7f7f7;
+  padding-left: 80px;
+  padding-top: 80px;
+}
+
+.paragraph {
+  float: right;
+  height: 85px;
+  font-size: 16px;
+  font-family: 'Museo Sans Cyrl 500';
+  font-weight: 400;
+}
+
+p {
+  margin-top: 0;
+}
+
+.pic {
+  width: 328px;
+  height: 85px;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+  font-family: 'Museo Sans Cyrl 700';
+  font-size: 14px;
+  font-weight: 400;
+}
+
+li {
+  font-family: 'Museo Sans Cyrl 300';
+  font-size: 14px;
+  font-weight: 400;
+}
+
+li::before {
+  content: "•";
+  color: #ffd200;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  margin-bottom: 10px;
+}
+
+.modal-right {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  background-color: #fff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=style.css.map */
